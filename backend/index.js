@@ -44,14 +44,22 @@ app.put('/completed', async (req, res) => {
         })
     }
 
-    await todo.update({
+    // await todo.findOneAndUpdate({
+    //     _id: req.body.id
+    // }, {
+    //     completed: true
+    // })
+
+    // res.json({
+    //     msg: "Todo marked as completed"
+    // })
+
+    await todo.deleteOne({
         _id: req.body.id
-    }, {
-        completed: true
     })
 
     res.json({
-        msg: "Todo marked as completed"
+        msg: "todo Deleted"
     })
 })
 
