@@ -8,8 +8,19 @@ This project contains a simple todo application it has the following features
 - Anyone can mark as done to their todo
 
 
+# Tech Stack Used
+
+- # FrontEnd
+- Vite with React
+- Tailwind CSS
+
+- # Backend
+- Node
+- express with mongoose
+- Mongo as DB
+- Zod
+
 ## Need to update
 
-- Add styling to the project
 - fix bugs
 
